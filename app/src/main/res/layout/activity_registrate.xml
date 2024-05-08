@@ -16,11 +16,19 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="16dp">
 
+        <ImageView
+            android:id="@+id/imgVolver"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_back"
+            android:layout_marginRight="300dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="18dp"
-            android:layout_marginVertical="15dp"
             android:text="@string/Regis"
             android:textColor="@color/black"
             android:textSize="60dp"
@@ -30,77 +38,108 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="18dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:text="@string/txtRap"
             android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold" />
 
-        <com.google.android.material.textfield.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
-            <EditText
-                android:id="@+id/txtNombre"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginHorizontal="60dp"
-                android:layout_marginVertical="10dp"
-                android:backgroundTint="@color/btnMarron"
-                android:hint="@string/txtNombre"
-                android:textAllCaps="false"
-                android:textColor="@color/white" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_height="match_parent"
+                android:textColorHint="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txtNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_text_inicio_sesion"
+                    android:hint="@string/txtNombre"
+                    android:textAllCaps="false"
+                    android:paddingLeft="15dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <EditText
-                android:id="@+id/txtApellido"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginHorizontal="60dp"
-                android:layout_marginVertical="10dp"
-                android:backgroundTint="@color/btnMarron"
-                android:hint="@string/txtApellido"
-                android:textAllCaps="false"
-                android:textColor="@color/white" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_height="match_parent"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/txtApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_text_inicio_sesion"
+                    android:hint="@string/txtApellido"
+                    android:textAllCaps="false"
+                    android:paddingLeft="10dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
             <EditText
                 android:id="@+id/txtNumCorreo"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginHorizontal="60dp"
-                android:layout_marginVertical="10dp"
-                android:backgroundTint="@color/btnMarron"
+                android:background="@drawable/edit_text_inicio_sesion"
                 android:hint="@string/txtNumCorreo"
                 android:textAllCaps="false"
-                android:textColor="@color/white" />
+                android:paddingLeft="10dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/editClave"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_inicio_sesion"
+                android:hint="@string/txtClave"
+                android:textAllCaps="false"
+                android:paddingLeft="10dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
             <EditText
                 android:id="@+id/cbxFechaNac"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginHorizontal="60dp"
-                android:layout_marginVertical="1dp"
-                android:backgroundTint="@color/btnMarron"
                 android:clickable="true"
                 android:focusable="false"
+                android:background="@drawable/edit_text_inicio_sesion"
                 android:hint="@string/cbxFechaNac"
                 android:inputType="date"
                 android:textAllCaps="false"
-                android:textColor="@color/white" />
+                android:paddingLeft="10dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -123,6 +162,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
+                android:background="@drawable/edit_button"
                 android:text="Mujer"
                 android:textAllCaps="false"
                 android:layout_weight="1"/>
@@ -131,6 +171,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
+                android:background="@drawable/edit_button"
                 android:text="Hombre"
                 android:textAllCaps="false"
                 android:layout_weight="1"/>
@@ -140,6 +181,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
+                android:background="@drawable/edit_button"
                 android:text="Otro"
                 android:textAllCaps="false"
                 android:layout_weight="1"/>
@@ -158,29 +200,16 @@
             android:textSize="15dp"
             android:textStyle="bold" />
 
-        <LinearLayout
+
+        <Button
+            android:id="@+id/foto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="50dp"
-            android:layout_marginVertical="15dp"
-            android:orientation="horizontal">
-            <Button
-                android:id="@+id/irBienvenida"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="15dp"
-                android:text="@string/volver_Bienvenida"
-                android:textAllCaps="false"
-                android:layout_weight="1"/>
-            <Button
-                android:id="@+id/foto"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:text="@string/Regis"
-                android:textAllCaps="false"
-                android:layout_weight="1"/>
-        </LinearLayout>
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_button"
+            android:text="@string/Regis"
+            android:textAllCaps="false" />
 
     </LinearLayout>
 
