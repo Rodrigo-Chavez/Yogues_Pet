@@ -14,6 +14,16 @@
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="16dp">
+
+        <ImageView
+            android:id="@+id/imgVolver"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_back"
+            android:layout_marginRight="300dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,17 +46,18 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white">
             <EditText
                 android:id="@+id/CelCorreo"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginHorizontal="60dp"
                 android:layout_marginVertical="5dp"
-                android:backgroundTint="@color/btnMarron"
+                android:background="@drawable/edit_text_inicio_sesion"
                 android:hint="@string/NumCel"
                 android:textAllCaps="false"
-                android:textColor="@color/white"/>
+                android:gravity="center"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -58,34 +69,18 @@
             android:textColor="@color/black"
             android:layout_marginHorizontal="55dp"
             android:layout_marginVertical="15dp"/>
+
         <Button
             android:id="@+id/ContinuarCCel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/edit_button"
             android:text="@string/Continuar"
             android:textAllCaps="false"
             android:layout_marginHorizontal="60dp"
-            android:layout_marginVertical="10dp"/>
+            android:layout_marginVertical="10dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
 
-        <TextView
-            android:id="@+id/RecuperarConCorreo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/RecuperarPorCorreo"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:layout_marginHorizontal="55dp"
-            android:layout_marginVertical="15dp"/>
-
-        <Button
-            android:id="@+id/VolverBienvenida"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/volver_Bienvenida"
-            android:textAllCaps="false"
-            android:layout_marginHorizontal="150dp"
-            android:layout_marginTop="153dp"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

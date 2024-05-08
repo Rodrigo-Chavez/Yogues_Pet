@@ -56,8 +56,7 @@
                 android:background="@drawable/edit_text_inicio_sesion"
                 android:hint="@string/RecuperarPorCorreo"
                 android:gravity="center"
-                android:textAllCaps="false"
-                android:textColor="@color/white"/>
+                android:textAllCaps="false"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
