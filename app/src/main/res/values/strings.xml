@@ -18,8 +18,10 @@
     <string name="btn1">Celular o correo electrónico</string>
     <string name="btn2">Contraseña</string>
     <string name="btn3">Iniciar Sesión</string>
+    <string name="txtBienvenida">¡Nuestra plataforma de\nadopción! Encuentra mascotas\nencantadoras en refugios cercanos.\n¡Comienza tu búsqueda ahora!</string>
     <string name="ContraOlvidada">¿Olvidaste tu contraseña?</string>
     <string name="btn4">Crear Cuenta</string>
+    <string name="lblOlvidasteT">¿Olvidaste tu contraseña?</string>
 
     <!-- Pestaña de Recuperar Cuenta Correo -->
     <string name="RecuperarCuenta">Recupera tu cuenta</string>
