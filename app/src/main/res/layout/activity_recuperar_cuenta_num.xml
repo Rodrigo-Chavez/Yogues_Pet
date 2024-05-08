@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividades.RecuperarCuentaNumActivity"
+    android:background="@color/fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RecuperarCuenta"
+            android:textColor="@color/black"
+            android:textSize="60dp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginVertical="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/IngresaCel"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginVertical="15dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/CelCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginVertical="5dp"
+                android:backgroundTint="@color/btnMarron"
+                android:hint="@string/NumCel"
+                android:textAllCaps="false"
+                android:textColor="@color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/PodemosEnviarSMS"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="55dp"
+            android:layout_marginVertical="15dp"/>
+        <Button
+            android:id="@+id/ContinuarCCel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Continuar"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:id="@+id/RecuperarConCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RecuperarPorCorreo"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="55dp"
+            android:layout_marginVertical="15dp"/>
+
+        <Button
+            android:id="@+id/VolverBienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/volver_Bienvenida"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="150dp"
+            android:layout_marginTop="153dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Yogues Pet</string>
+    <string name="carLblMensaje">Cargando ... </string>
+    <string name="logTxtNombre">Nombre</string>
+    <string name="logTxtCorreo">Correo</string>
+    <string name="logTxtClave">Clave</string>
+    <string name="logTxtClaveConfirm">Confirmar Clave</string>
+    <string name="logChkRecordar">Recordar sesión</string>
+    <string name="logBtnIniciar">Iniciar</string>
+    <string name="logBtnSalir">Salir</string>
+    <string name="logLblRegistro">¡Regístrate!</string>
+    <string name="logLblDerechos">Copy Right Tinder Mascotas 2024</string>
+    <string name="bieLblSaludo">Bienvenido @user</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Pestaña de BIENVENIDA -->
+    <string name="btn1">Celular o correo electrónico</string>
+    <string name="btn2">Contraseña</string>
+    <string name="btn3">Iniciar Sesión</string>
+    <string name="ContraOlvidada">¿Olvidaste tu contraseña?</string>
+    <string name="btn4">Crear Cuenta</string>
+
+    <!-- Pestaña de Recuperar Cuenta Correo -->
+    <string name="RecuperarCuenta">Recupera tu cuenta</string>
+    <string name="IngresaCel">Ingresa tu número de celular</string>
+    <string name="NumCel">Número de celular</string>
+    <string name="PodemosEnviarSMS">Podemos enviarte notificaciones por SMS con finer de seguridad e inicio de sesión.</string>
+    <string name="Continuar">Continuar</string>
+    <string name="RecuperarPorCorreo">Recuperar por correo</string>
+
+    <string name="IngresaCorreo">Ingresa correo</string>
+    <string name="PonerCorreo">Correo Electrónico</string>
+    <string name="RecuperarPorNum">Recuperar por número</string>
+    <string name="volver_Bienvenida">Volver</string>
+
+
+    <!-- Pestaña de Registro -->
+    <string name="Regis">Regístrate</string>
+    <string name="txtRap">Es rápido y fácil</string>
+    <string name="txtNombre">Nombre</string>
+    <string name="txtApellido">Apellido</string>
+    <string name="txtNumCorreo">Celular o correo electrónico</string>
+    <string name="txtContra">Contraseña</string>
+    <string name="cbxFechaNac">Fecha</string>
+    <string name="txtSexo">Sexo</string>
+    <string name="btnMujer">Mujer</string>
+    <string name="btnHombre">Hombre</string>
+    <string name="btnPersonalizado">Personalizado</string>
+    <string name="txtAlHacer">Al hacer click en "Registrarse", aceptas nuestras Condiciones, la Política de datos y la Política de cookies. Es posible que enviemos notificaiones por SMS, que puedes desactivar cuando quieras.</string>
+
+    <!-- Pestaña de Editar Perfil -->
+    <string name="editar">Editar</string>
+    <string name="cboSexo">Sexo</string>
+    <string name="txtCumpleaños">Fecha de Cumpleaños</string>
+    <string name="txtNombree">Nombre Completo</string>
+    <string name="txtRaza">Raza</string>
+    <string name="btnGuardar">Guardar</string>
+    <string name="txtDesafios">Desafios</string>
+    <string name="txtCaracteristicas">Caracteristicas</string>
+    <string name="txtEsterilizado">Esterilizado</string>
+    <string name="txtAlergias">Alergias</string>
+    <string name="txtPeso">Peso</string>
+    <string name="txtCitaconelveterinario">Cita con el veterinario</string>
+    <string name="txtEditarperfil">EDITAR PERFIL</string>
+
+    <!-- Pestaña de Inicio de Sesion -->
+    <string name="bienLblSaludo">Bienvenido @user</string>
+    <string name="bienLblMapa">¡Refugios cercanos a tu zona!</string>
+    <string name="bienLblCompartir">Comparte un poco de amor con una mascota, regala una bolsa de comida o brinda apoyo económico</string>
+    <string name="bienLblTitulo">YOGUES PET</string>
+</resources>
