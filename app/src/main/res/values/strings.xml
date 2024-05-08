@@ -49,6 +49,7 @@
     <string name="btnMujer">Mujer</string>
     <string name="btnHombre">Hombre</string>
     <string name="btnPersonalizado">Personalizado</string>
+    <string name="txtClave">Contraseña</string>
     <string name="txtAlHacer">Al hacer click en "Registrarse", aceptas nuestras Condiciones, la Política de datos y la Política de cookies. Es posible que enviemos notificaiones por SMS, que puedes desactivar cuando quieras.</string>
 
     <!-- Pestaña de Editar Perfil -->
