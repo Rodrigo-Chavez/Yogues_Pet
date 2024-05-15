@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <solid android:color="@color/btnAumentoDecremento" /> <!-- Cambia "tu_color_personalizado" por el color deseado -->
+            <corners android:radius="300dp" /> <!-- Opcional: ajusta el radio del borde -->
+        </shape>
+    </item>
+</selector>

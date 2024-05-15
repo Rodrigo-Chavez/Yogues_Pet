@@ -15,4 +15,9 @@
     <!-- Pestaña de BIENVENIDA -->
     <color name="btnMarron">#6D5F53</color>
     <color name="btnNaranja">#FF8000</color>
+
+    <color name="btnNext">#323830</color>
+    <color name="btnAumentoDecremento">#2D4D5A</color>
+    <color name="btnBarraAD">#636D62</color>
+    <color name="barraSup">#BF8548</color>
 </resources>

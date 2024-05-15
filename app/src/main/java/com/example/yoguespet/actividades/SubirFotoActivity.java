@@ -11,6 +11,6 @@ public class SubirFotoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_subir_foto);
+        setContentView(R.layout.fragment_menu);
     }
 }

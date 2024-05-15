@@ -11,6 +11,6 @@ public class SaludActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_salud);
+        setContentView(R.layout.activity_selecion_de_foto);
     }
 }
