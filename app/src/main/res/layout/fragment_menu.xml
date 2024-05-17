@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/menu"
-    app:cardCornerRadius="15dp"
-    app:cardElevation="5dp"
     app:cardUseCompatPadding="true"
-    app:cardBackgroundColor="@color/menu"
     tools:context=".fragmentos.MenuFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/menu">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,47 +19,90 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/frgMenImbBusqueda"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="#0000"
-                android:src="@drawable/bus64" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/frgMenImbBusqueda"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:background="#0000"
+                    android:src="@drawable/ic_home" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Inicio"
+                    android:gravity="center"/>
 
-            <ImageButton
-                android:id="@+id/frgMenImbMensaje"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="#0000"
-                android:src="@drawable/men64" />
+            </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/frgMenImbMatch"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="#0000"
-                android:src="@drawable/mat64" />
 
-            <ImageButton
-                android:id="@+id/frgMenImbConfiguracion"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="#0000"
-                android:src="@drawable/cfg64" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/frgMenImbMensaje"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="#0000"
+                    android:src="@drawable/ic_adopta" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="!Adopta¡"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/frgMenImbMatch"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="#0000"
+                    android:src="@drawable/ic_perfil" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Perfil"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/frgMenImbConfiguracion"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="#0000"
+                    android:src="@drawable/ic_ajustes" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ajustes"
+                    android:gravity="center"/>
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
 
-</androidx.cardview.widget.CardView>
+</FrameLayout>
