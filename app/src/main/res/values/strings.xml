@@ -72,4 +72,19 @@
     <string name="bienLblMapa">¡Refugios cercanos a tu zona!</string>
     <string name="bienLblCompartir">Comparte un poco de amor con una mascota, regala una bolsa de comida o brinda apoyo económico</string>
     <string name="bienLblTitulo">YOGUES PET</string>
+
+    <!-- Pestaña de Inicio -->
+    <string name="txtInicio1">Refugios cercanos a tu zona!</string>
+    <string name="txtInicio2">Comparte un poco de amor con una mascota regala una bolsa de comida o brinca apoyo económico.</string>
+    <string name="btnApoyar">Apoyar</string>
+
+
+    <!-- Pestaña de Inicio -->
+    <string name="txtAdopta1">LEIA</string>
+    <string name="txtAdopta2">2 AÑOS</string>
+    <string name="txtAdopta3">ENERGETICO</string>
+    <string name="txtAdopta4">HEMBRA</string>
+    <string name="btnAdapadrinar">Apadrinar</string>
+    <string name="btnAdoptar">Adoptar</string>
+    <string name="btnSiguiente">Siguiente</string>
 </resources>
