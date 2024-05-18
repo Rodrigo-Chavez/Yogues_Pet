@@ -5,10 +5,124 @@
     android:layout_height="match_parent"
     tools:context=".fragmentos.PerfilFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:background="@color/fondo">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtPerfilCompleto"
+            android:textColor="@color/black"
+            android:gravity="end"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/nav_header_imageView"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/psyduck_user"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="25dp">
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="@string/txtNombre"/>
+
+            <EditText
+                android:id="@+id/CelCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_inicio_sesion"
+                android:textColorHint="@color/white"
+                android:paddingLeft="10dp"
+                android:hint="@string/txtNombre"
+                android:textAllCaps="false"
+                android:layout_below="@+id/txtNombre"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="25dp">
+
+            <TextView
+                android:id="@+id/txtGeneral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="@string/txtGeneral"/>
+
+            <EditText
+                android:id="@+id/Sexo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_inicio_sesion"
+                android:textColorHint="@color/white"
+                android:paddingLeft="10dp"
+                android:hint="@string/txtSexo"
+                android:textAllCaps="false"
+                android:layout_below="@+id/txtGeneral"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/Cumpleaños"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_inicio_sesion"
+                android:textColorHint="@color/white"
+                android:paddingLeft="10dp"
+                android:hint="@string/txtCumpleaños"
+                android:textAllCaps="false"
+                android:layout_below="@+id/Sexo"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/Raza"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_inicio_sesion"
+                android:textColorHint="@color/white"
+                android:paddingLeft="10dp"
+                android:hint="@string/txtRaza"
+                android:textAllCaps="false"
+                android:layout_below="@+id/Cumpleaños"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/fondo_button"
+       android:layout_gravity="bottom">
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_marginHorizontal="50dp"
+           android:layout_marginVertical="10dp"
+           android:textSize="20sp"
+           android:textColor="@color/white"
+           android:text="@string/btnGuardar"
+           android:background="@drawable/edit_button"/>
+   </RelativeLayout>
+
 
 </FrameLayout>

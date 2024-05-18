@@ -87,4 +87,8 @@
     <string name="btnAdapadrinar">Apadrinar</string>
     <string name="btnAdoptar">Adoptar</string>
     <string name="btnSiguiente">Siguiente</string>
+
+    <!-- Pestaña de Perfil -->
+    <string name="txtPerfilCompleto">20% COMPLETADO</string>
+    <string name="txtGeneral">General</string>
 </resources>

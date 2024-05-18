@@ -20,4 +20,6 @@
     <color name="btnAumentoDecremento">#2D4D5A</color>
     <color name="btnBarraAD">#636D62</color>
     <color name="barraSup">#BF8548</color>
+
+    <color name="fondo_button">#E0AB76</color>
 </resources>
