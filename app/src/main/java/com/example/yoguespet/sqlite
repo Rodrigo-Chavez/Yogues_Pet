@@ -1,1 +1,34 @@
+package com.example.yoguespet.sqlite;
 
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+import androidx.annotation.Nullable;
+
+public class veterinariamascotas extends SQLiteOpenHelper {
+    private static final String nameDB = "veterinariamascotas.db";
+    private static final int versionDB = 1;
+    private static final String createTableUsuario = "create table if not exists Usuario (id integer, correo varchar(255), celular varchar(255), contrasena varchar(255));";
+    private static final String dropTableUsuario ="drop table if exists Usuario";
+//cambio
+
+    public veterinariamascotas(@Nullable Context context) {
+        super(context, nameDB, null, versionDB);
+    }
+
+    @Override
+    public void onCreate(SQLiteDatabase db) {
+        //aca creará el schema de BD
+        db.execSQL(createTableUsuario);
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        //aca se actualiza el schema de la BD
+        db.execSQL(dropTableUsuario);
+        db.execSQL(createTableUsuario);
+    }
+}
