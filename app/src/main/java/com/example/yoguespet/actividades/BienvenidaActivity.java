@@ -12,20 +12,29 @@ import com.example.yoguespet.R;
 
 public class BienvenidaActivity extends AppCompatActivity implements View.OnClickListener {
 
-    TextView txtRecuperar;
 
-    Button btnRegistrar;
+    //nuevo
+    EditText txtcorreocel, txtcontrasena;
+    TextView txtRecuperar;
+    
+    Button btnRegistrar, btnIniciarSession;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenida);
 
+        //nuevo
+        txtcorreocel = findViewById(R.id.CelCorreo);
+        txtcontrasena = findViewById(R.id.Contrasena);
+        btnIniciarSession = findViewById(R.id.InicioSesionB);
         txtRecuperar = findViewById(R.id.OlvidasteContra);
         btnRegistrar = findViewById(R.id.CrearCuenta);
 
         txtRecuperar.setOnClickListener(this);
         btnRegistrar.setOnClickListener(this);
+        btnIniciarSession.setOnClickListener(this);
     }
 
     @Override
@@ -38,6 +47,22 @@ public class BienvenidaActivity extends AppCompatActivity implements View.OnClic
             Intent iCrearC = new Intent(this, RegistrateActivity.class);
             startActivity(iCrearC);
             finish();
+        } else if (v.getId()== R.id.InicioSesionB) {
+            iniciarSesion(txtcorreocel.getText().toString().trim().toLowerCase(), txtcontrasena.getText().toString());
+        }
+        //nuevo
+    }
+
+    private void iniciarSesion(String correo, String contrasena) {
+        //sqlite
+        if(correo.equals("sebas@upn.pe") && contrasena.equals("123456")){
+            Intent iBienvenida = new Intent(this, InicioSesionActivity.class);
+            iBienvenida.putExtra("nombre", "ositope");
+            startActivity(iBienvenida);
+            finish();
+        }
+        else{
+            Toast.makeText(this, "Correo o clave incorrecta", Toast.LENGTH_SHORT).show();
         }
     }
 }
